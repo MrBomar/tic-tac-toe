@@ -1,0 +1,224 @@
+/* Written May 2018 by Leslie C. Bomar: contact mrlesbomar@gmail.com */
+
+body {
+    margin: 0;
+}
+
+#pageColumns {
+    display: grid;
+    grid-template-columns: auto auto 35vw auto;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+#banner {
+    color:orangered;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    margin: 0;
+    padding: 0;
+}
+
+#banner h1 {
+    width: 47vw;
+    float: left;
+    line-height: 10vh;
+    margin: 0px;
+    font-size: 6vh;
+    text-align: center;
+    letter-spacing: .5ch;
+}
+
+#banner button {
+    width: 47vw;
+    height: 10vh;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-size: 4vh;
+    font-weight: bold;
+    letter-spacing: .5ch;
+    text-transform: uppercase;
+    background: none;
+}
+
+#gameDiv {
+    color: white;
+    grid-row: 2;
+    grid-column: 2;
+    max-height: 80vh;
+    box-shadow: 8px 8px 20px black;
+}
+
+#scoreDiv {
+    background-color: whitesmoke;
+    color: black;
+    grid-row: 2;
+    grid-column: 3;
+    max-height: 80vh;
+    font-size: 3vw;
+    border: 1px solid black;
+    box-shadow: 8px 8px 20px black;
+}
+
+#scoreCard {
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+#scoreCard tr, td{
+    line-height: 8vh;
+    border-bottom: 1px solid blue;
+}
+
+#A1 {
+    width: 33%;
+    height: 33%;
+}
+
+#B2 {
+    width: 33%;
+    height: 33%;
+}
+
+#C3 {
+    width: 33%;
+    height: 33%;
+}
+
+.name {
+    padding-left: 15px;
+    width: 50%;
+}
+
+.value {
+    text-align: center;
+    width: 50%;
+}
+
+#footer {
+    color: black;
+    grid-row: 3;
+    grid-column: 1 / 5;
+    width: 100%;
+}
+
+#footer h3 {
+    line-height: 10vh;
+    margin: 0px;
+    padding: 0px 25px 5px 0px;
+    float: right;
+    font-size: 4vh;
+    font-style: italic;
+}
+
+#gameGrid {
+    border-collapse: collapse;
+    border: 2px solid black;
+    max-width: 80vh;
+    width: 66vw;
+    max-height: 80vh;
+    height: 66vw;
+}
+
+#gameGrid th {
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    font-size: 15vh;
+}
+
+#modal {
+    position: absolute;
+    display: none;
+	background-color: slateblue;
+	width: 100%;
+	height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#modal-inner {
+    background-color: white;
+    margin: 10% auto;
+    height: 50%;
+    width: 80%;
+    border: 2px solid black;
+}
+
+#modal-inner h3 {
+    width:100%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2em;
+}   
+
+#modal-inner button {
+    min-width: 100px;
+    width: 5%;
+    margin-left: 47.5%;
+}
+
+@media (orientation: portrait) {
+    #gameGrid {
+        border-collapse: collapse;
+        border: 2px solid black;
+        max-width: 40vh;
+        width: 40vh;
+        max-height: 40vh;
+        height: 40vh;
+    }
+    
+    #gameGrid th {
+        font-size: 10vh;
+    }
+
+    #pageColumns {
+        grid-template-columns: auto 40vh auto;
+        grid-template-rows: 10vh 40vh 40vh 10vh;
+    }
+
+    #banner h1 {
+        font-size: 5vw;
+    }
+
+    #banner {
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    #gameDiv {
+        grid-column: 2;
+        grid-row: 2;
+        max-height: 40vh;
+        max-width: 40vh;
+    }
+
+    #scoreDiv {
+        grid-row: 3;
+        grid-column: 2;
+        max-height: 40vh;
+        max-width: 40vh;
+        font-size: 3vw;
+    }
+
+    #footer {
+        grid-row: 4;
+        grid-column: 1/4;
+    }
+
+    #scoreCard tr, td{
+        line-height: 4vh;
+    }
+
+    #footer h3 {
+        margin-right: 0px;
+        font-size: 3vh;
+    }
+
+    #banner button {
+        font-size: 5vw;
+        padding: 0px;
+        margin: 0px;
+    }
+}

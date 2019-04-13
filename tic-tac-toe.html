@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Written May 2018 by Leslie C. Bomar: contact mrlesbomar@gmail.com-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic-Tac-Toe | Written by Leslie C. Bomar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="tic-tac-toe.css"/>
+    <meta name="author" content="Leslie C. Bomar"/>
+    <meta name="keywords" content="solitaire HTML5 CSS3 JavaScript Full Stack Developer HTML card game DOM Domain Object Model Manipulation"/>
+    <meta name="description" content="An HTML based solitaire game demonstrating DOM manipulation using JavaScript."/>
+</head>
+<body>
+    <div id="modal">
+        <div id="modal-inner">
+            <h3></h3>
+            <button>OK</button>
+        </div>  
+    </div>
+    <div id="pageColumns">
+        <div id="banner">
+            <h1>Tic-Tac-Toe</h1>
+            <button onclick="resetGame()">Restart</button>
+        </div>
+        <div id="gameDiv">
+            <table id="gameGrid">
+                <tr>
+                    <th id="A1"></th>
+                    <th id="B1"></th>
+                    <th id="C1"></th>
+                </tr>
+                <tr>
+                    <th id="A2"></th>
+                    <th id="B2"></th>
+                    <th id="C2"></th>
+                </tr>
+                <tr>
+                    <th id="A3"></th>
+                    <th id="B3"></th>
+                    <th id="C3"></th>
+                </tr>
+            </table>
+        </div>
+        <div id="scoreDiv">
+            <table id="scoreCard">
+                <tr>
+                    <th>X</th>
+                    <th>O</th>
+                </tr>
+                <tr>
+                    <td class="name">Wins</td>
+                    <td class="name"></td>
+                </tr>
+                <tr>
+                    <td id="xWins" class="value">0</td>
+                    <td id="oWins"class="value">0</td>
+                </tr>
+                <tr>
+                    <td class="name">Losses</td>
+                    <td class="name"></td>
+                </tr>
+                <tr>
+                    <td id="xLosses" class="value">0</td>
+                    <td id="oLosses" class="value">0</td>
+                </tr>
+                <tr>
+                    <td class="name">Win-Rate</td>
+                    <td class="name"></td>
+                </tr>
+                <tr>
+                    <td id="xRate" class="value">0%</td>
+                    <td id="oRate" class="value">0%</td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <h3>Written by: Leslie C. Bomar</h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="tic-tac-toe.js"></script>
+</body>
+</html>
